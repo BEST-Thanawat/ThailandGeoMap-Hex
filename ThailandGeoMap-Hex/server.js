@@ -1,8 +1,16 @@
-'use strict';
-var http = require('http');
-var port = process.env.PORT || 1337;
+var $ = require("jquery");
+var express = require('express');
+var app = express();
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+app.use(express.static('public'));
+
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + "/" + "country-th-hex.html");
+})
+
+var server = app.listen(1337, function () {
+    var host = server.address().address
+    var port = server.address().port
+
+    console.log("Example app listening at http://%s:%s", host, port)
+})

@@ -28,9 +28,21 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="country-th-hex.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="images\ThailandGeoMap-Hex-Excel.jpg" />
+    <Content Include="images\ThailandGeoMap-Hex-QGIS.jpg" />
+    <Content Include="images\ThailandGeoMap-Hex.jpg" />
+    <Content Include="public\json\THGeoMap_Hex.json" />
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="public\" />
+    <Folder Include="public\json\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
