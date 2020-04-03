@@ -1,0 +1,9 @@
+{
+  "name": "thailand-geo-map-hex",
+  "version": "0.0.0",
+  "description": "ThailandGeoMap-Hex",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
